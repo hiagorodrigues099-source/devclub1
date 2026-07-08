@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Care</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar"> 
+        <!-- Os links ganharam uma classe para controle de visibilidade -->
+        <nav class="nav-links">
+            <a href="#">Products</a>
+            <a href="#">Company</a>
+            <a href="#">Blog</a>
+            <a href="#">Log in</a>
+        </nav>
+        <button class="btn-signup">Sign up</button>
+    </header>
+
+    <main class="hero-container"> 
+        <!-- Ordem semântica: O texto vem primeiro no fluxo do HTML -->
+        <section class="hero-content">
+            <h2>Wide coverage location</h2>
+            <p>Shared rides, there’s lots to do in your city, and we’ve got the rides to help you enjoy it all. And they’re all available right from your app.</p>
+            <button id="button-main">Learn more...</button>
+        </section>
+
+        <!-- A imagem vem depois, garantindo que fique embaixo no mobile -->
+        <div class="hero-image-wrapper">
+            <img src="(Positive) Congratulation You get 40 point for your ride.png" alt="we-care-logo" class="logo-image">
+        </div>
+    </main>
+</body>
+
+<style>
+    /* --- RESET & BASE STYLES --- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: #17233d;
+        background-color: #ffffff;
+        padding: 0 20px;
+    }
+
+    /* --- HEADER (RESPONSIVO) --- */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* ABORDAGEM MOBILE-FIRST: Oculta os links por padrão no celular */
+    .nav-links {
+        display: none; 
+        gap: 20px;
+    }
+
+    .nav-links a {
+        color: #17233d;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+        color: #6fbf44;
+    }
+
+    .btn-signup {
+        color: #ffffff;
+        background: #6fbf44;
+        border: 2px solid #6fbf44;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background 0.2s;
+        margin-left: auto; /* Garante que o botão fique na direita mesmo sem os links */
+    }
+
+    .btn-signup:hover {
+        background: #5aa637;
+        border-color: #5aa637;
+    }
+
+    /* --- MAIN CONTENT (MOBILE-FIRST) --- */
+    .hero-container {
+        display: flex;
+        flex-direction: column; /* Elementos empilhados verticamente */
+        align-items: center;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 600px;
+    }
+
+    .hero-content h2 {
+        color: #161a49;
+        font-size: 32px; /* Tamanho otimizado para telas mobile */
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        color: #4b505a;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #button-main {
+        color: #6fbf44;
+        background: transparent;
+        border: 2px solid #6fbf44;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px 30px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    #button-main:hover {
+        background: #6fbf44;
+        color: #ffffff;
+    }
+
+    .hero-image-wrapper {
+        width: 100%;
+        max-width: 450px; 
+    }
+
+    .logo-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* --- MEDIA QUERY (DESKTOP) --- */
+    /* Regras aplicadas apenas para telas maiores que 768px */
+    @media (min-width: 768px) {
+        .nav-links {
+            display: flex; /* Faz os links reaparecerem no desktop */
+        }
+
+        .btn-signup {
+            margin-left: 0; /* Reseta o alinhamento para o grid do desktop */
+        }
+
+        .hero-container {
+            flex-direction: row; /* Alinha lado a lado: texto na esquerda, imagem na direita */
+            justify-content: space-between;
+            text-align: left;
+            margin: 80px auto;
+        }
+
+        .hero-content {
+            align-items: flex-start; /* Alinha textos e botões à esquerda */
+        }
+
+        .hero-content h2 {
+            font-size: 56px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+        }
+    }
+</style>
+</html>
