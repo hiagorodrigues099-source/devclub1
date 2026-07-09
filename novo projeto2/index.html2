@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Care</title>
+    
+    <!-- Link para o CSS Local -->
+    <link rel="stylesheet" href="styles.css">  
+    
+    <!-- Google Fonts Corrigido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <div1> Home </div1>
+        <div2> About </div2>
+        <div3> Product </div3>
+        <div4> Service </div4>
+        <div5> Contact </div5>
+        <button class="button">Login</button>
+    </header>
+
+    <main> 
+        <img src="Illustration 2.png" alt="we-care-logo" class="logo-image">
+
+        <section>
+            <h1>We Care</h1>
+            <h2>About Your Pet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius repellat perspiciatis eum consectetur sed error, dolore alias? Repudiandae enim culpa quo omnis et accusamus distinctio iure neque recusandae quaerat!</p>
+            <button id="button-main">Explore</button>
+        </section> <!-- Fechado corretamente aqui -->
+    </main>
+</body>
+<style>
+   div1 { 
+    
+            color: #989d9c; font-size: 30px; 
+            cursor: pointer; /* Muda cursor ao passar o mouse */
+            float: left; /* Alinha a imagem à direita */
+            text-align: center;  margin: 20px;
+            font: 900px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        }
+
+div2 { 
+            color: #989d9c; font-size: 30px; 
+            cursor: pointer; /* Muda cursor ao passar o mouse */
+            float: left; /* Alinha a imagem à direita */
+            text-align: center; margin: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+        
+
+div3 {  
+            color: #989d9c; font-size: 30px; 
+            cursor: pointer; /* Muda cursor ao passar o mouse */
+            float: left; /* Alinha a imagem à direita */
+            text-align: center; margin: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div4 { 
+            color: #989d9c; font-size: 30px; 
+            cursor: pointer;  /* Muda cursor ao passar o mouse */
+            float: left; /* Alinha a imagem à direita */
+            text-align: center; margin: 20px; 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    
+div5 { 
+            color: #989d9c; font-size: 30px; 
+            cursor: pointer;  /* Muda cursor ao passar o mouse */
+            float: left; /* Alinha a imagem à direita */
+            text-align: center; margin: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+
+  
+button { 
+            color: #ffff;
+            border-color: #665ae1;
+            background: #665ae1;
+            cursor: pointer;           /* Muda cursor ao passar o mouse */
+            border-color: #665ae1;
+            border-radius: 20px;
+            font-size: 30px;
+            float: left; /* Alinha a imagem à direita */
+            margin-right: 100px; /* Espaçamento entre a imagem e o texto */ 
+            height: auto; /* Mantém a proporção */
+            margin: 20px;   
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+            font-weight: bold;
+            padding: 10px 10px;
+   }
+
+   h1{
+            left: 50%;
+            position: absolute;
+            transform: translateX(0,5%);
+            margin-top: 12%;
+            color: #515151;
+            font-size: 100px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-right: 0px;
+}
+   h2{
+            left:50%;
+            position: absolute;
+            transform: translateX(0,5%);
+            margin-top: 20%;
+            color: #515151;
+            font-size: 50px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+   p{
+            left: 50%;
+            position: absolute;
+            transform: translateX(70);
+            margin-top: 25%;
+            color: #515151;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+   }
+   
+   img{ 
+            margin-right: auto; /* Espaçamento entre a imagem e o texto */
+            margin-left: auto;
+            width: 500px; /* Largura da imagem */
+            height: 200; /* Mantém a proporção */
+            display: block;
+            text-align: center;
+            margin-top: 100px;
+            float: left; /* Alinha a imagem à esquerda */
+            position: absolute;
+            top: 5%;
+   }
+
+   #button-main{
+            color: #000;
+            border-color: #adff00;
+            background: #adff00;
+            cursor: pointer;           /* Muda cursor ao passar o mouse */
+            border-color: #adff00; 
+            border-radius: 30px; 
+            margin-top: 35%;
+            position: absolute;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            padding: 15px 15px;
+   }
+</style>
+</html>
