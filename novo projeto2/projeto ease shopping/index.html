@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Shopping Via Mobile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- SEÇÃO DA IMAGEM (Fica no topo no mobile, e na direita no computador) -->
+        <section class="container-right">
+            <img src="Illustration-3-3.png" alt="Person holding a smartphone and browsing a mobile shopping app">
+        </section>        
+        
+        <!-- SEÇÃO DE TEXTOS E MENU -->
+        <section class="container-left">
+            <header>
+                <a href="#">Home</a>
+                <a href="#" class="active">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </header> 
+
+            <div class="content">
+                <h1>Easy Shopping <br>Via Mobile</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem justo, sollicitudin vel ultricies sed, eleifend nec metus. Etiam vitae pellentesque dolor.</h2>
+                <button>Get Started</button>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+/* --- ESTILOS PADRÃO (DESKTOP / COMPUTADOR) --- */
+
+.wrapper {
+    display: flex;
+    flex-direction: row-reverse; 
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.container-right {
+    flex: 1;
+    background-color: rgba(93, 93, 125, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-right img {
+    max-width: 60%;
+    height: auto;
+}
+
+.container-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center; 
+}
+
+
+header {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 40px;      
+    right: 80px; /* Ajustado para um alinhamento seguro na direita */
+    z-index: 10;   
+}
+
+header a {
+    color: #5D5D7D;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+header a.active {
+    color: #9797df;
+}
+
+.content {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+h1 {
+    color: #5D5D7D;
+    font-size: 55px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #9797df;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+button {
+    color: #ffffff;
+    background: #9499EA;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 40px;
+    width: fit-content;
+    transition: opacity 0.2s;
+}
+
+button:hover { opacity: .8; }
+button:active { opacity: .5; }
+
+/* --- 📱 CONFIGURAÇÃO EXCLUSIVA PARA TELA DE CELULAR (MÁXIMO 768PX) --- */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column; /* Empilha os blocos verticalmente */
+        height: auto;
+    }
+
+    /* O bloco do background/imagem fica no topo ocupando espaço ideal */
+    .container-right {
+        padding: 40px 20px;
+        order: 2; /* Move a imagem para baixo dos textos se preferir, ou deixe no topo mudando a ordem */
+    }
+
+    .container-right img {
+        max-width: 70%; /* Imagem se adapta proporcionalmente */
+    }
+
+    /* Bloco de conteúdo se ajusta à tela inteira do celular */
+    .container-left {
+        padding: 30px 24px;
+        order: 1;
+    }
+
+    /* O menu sai da posição absoluta fixa e se alinha perfeitamente no topo do celular */
+    header {
+        position: static; 
+        justify-content: space-between; /* Distribui os links igualmente no celular */
+        width: 100%;
+        margin-bottom: 40px;
+        gap: 10px;
+    }
+
+    header a {
+        font-size: 18px; /* Texto ligeiramente menor para não quebrar linha */
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 38px; /* Título menor para caber em telas mobile */
+        line-height: 44px;
+    }
+
+    h2 {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+
+    button {
+        width: 100%; /* Botão expande no celular para ficar mais fácil de clicar com o polegar */
+        text-align: center;
+    }
+}
+
+@media screen and  (max-width: 900px){
+    .container-left{
+        width: 100%;
+        height: 50%;
+        padding-bottom: 0%;
+        margin: 0%;
+    }
+
+    .container-right{
+        display: block;
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+img{
+        position: static;
+
+}
+
+header{
+    display: none;
+}
+h1{
+    font-size: 36px;
+    font-weight: 52px;
+    width: auto;
+    margin: 58px 58px 0  58px;
+    text-align: center;
+
+}
+
+</style>
+</html>
