@@ -35,7 +35,7 @@ Sou um desenvolvedor **Front-End** em início de carreira. Atualmente, estou foc
 ## 📬 Vamos nos conectar?
 
 <p align="left">
-  <a href="https://linkedin.com/in/hiagoandrade" target="_blank">
+  <a href="www.linkedin.com/in/hiago-andrade-88b0ba8b">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:hiagoboanova@gmail.com">
