@@ -29,7 +29,15 @@ Sou um desenvolvedor **Front-End** em início de carreira. Atualmente, estou foc
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
-
+<br>
+<br>
+<h1> Esse foi meu primeiro projeto no DevClub, utilizando </h1>
+<p align="left">
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+</p>
+<br>
+<img src="https://github.com/hiagorodrigues099-source/devclub1/blob/8761a0324a3ef9a0a7799ccf39c53143798d15d7/novo%20projeto2/projeto%20ease%20shopping/projeto%20esay.png"/>
 ---
 
 ## 📬 Vamos nos conectar?
